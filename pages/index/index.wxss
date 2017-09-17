@@ -1,0 +1,96 @@
+/**index.wxss**/
+.fullContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-image: url('https://i.loli.net/2017/09/17/59be69b42b3c0.png');
+  background-size: 100% 100%;
+} 
+
+.halfContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.upperContainer {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-top: 63rpx;
+}
+
+.contentContainer {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin: 100rpx;
+}
+
+.first_text {
+  font-size: 35rpx;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.second_text {
+  font-size: 25rpx;
+}
+
+.inputContainer {
+  width: 71%;
+  height: 91%;
+  margin-bottom: 30rpx;
+  background-color: rgba(177,193,194,0.5);
+  border-radius: 10rpx;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+}
+
+.input_padding {
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  padding-bottom: 11rpx;
+  font-size: 30rpx;
+  color: white;
+  position:relative;
+  animation-duration:2s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-play-state:running;
+}
+
+.input {
+  width: 98%;
+  text-align: center;
+}
+
+.input_left {
+  animation-name:left_animation;
+}
+
+@keyframes left_animation
+{
+	0%   {left:0px;}
+	50%  {left:20rpx;}
+	100% {left:0px;}
+}
+
+.input_right {
+  animation-name:right_animation;
+}
+
+@keyframes right_animation
+{
+	0%   {left:0px;}
+	50%  {left:-20rpx;}
+	100% {left:0px;}
+}

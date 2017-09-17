@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="fullContainer">
+  <view class="halfContainer"></view>
+  <view class="halfContainer">
+    <view class="upperContainer">
+      <view class="contentContainer">
+        <view class="inputContainer"> 
+          <text class="input_padding input_left">》</text>
+          <input class="input" bindblur='bindBlur' placeholder='输入框'></input>
+          <text class="input_padding input_right">《</text>
+        </view>
+        <text bindtap='bindInputTap' class="first_text">点击生成你的清华故事</text>
+      </view>
+      <text class="second_text">2017清华大学研究生运动会</text>
+    </view>
+  </view>
+</view>

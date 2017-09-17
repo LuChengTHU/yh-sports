@@ -1,0 +1,12 @@
+/**result.wxss**/
+
+.result_background {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result_image {
+  height: 100%;
+}
