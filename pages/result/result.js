@@ -7,12 +7,9 @@ Page({
   },
 
   onLoad: function (options) {
-    var string_bg = ''
-    string_bg += options.bg[0]
-    string_bg += ','
-    string_bg += options.bg[1]
-    string_bg += ','
-    string_bg += options.bg[2]
+    let string_bg = 'rgb('
+    string_bg += options.bg
+    string_bg += ')'
     this.setData({
       image_src: options.src_url,
       bg: string_bg

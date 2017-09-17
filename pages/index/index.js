@@ -18,6 +18,11 @@ Page({
       title: '长度需小于10字符哟',
       duration: 1000
     })
+    else if (l == 0) wx.showToast({
+      image: "../../images/error.png",
+      title: '名字不能为空',
+      duration: 1000
+    })
     else {
       if(!this.data.enabled_click) return;
       this.setData({
