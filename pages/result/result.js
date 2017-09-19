@@ -14,6 +14,26 @@ Page({
       image_src: options.src_url,
       bg: string_bg
     })
-  }
+  },
 
+  bindTap: function(e) {
+    wx.showLoading({
+      title: '正在下载图片',
+    })
+    wx.downloadFile({
+      url: this.data.image_src,
+      success: (res) => {
+        wx.hideLoading();
+        wx.saveImageToPhotosAlbum({
+          filePath: res.tempFilePath,
+          success: (res) => {
+            wx.showToast({
+              title: '保存图片到相册',
+              duration: 1000
+            })
+          }
+        })
+      }
+    })
+  }
 })

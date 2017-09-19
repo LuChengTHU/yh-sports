@@ -7,6 +7,17 @@ Page({
     inputData: '',
     enabled_click: true
   },
+  onLoad: function(options) {
+    wx.getSetting({
+      success: (res) => {
+        if (!res.authSetting['scope.writePhotosAlbum']) {
+          wx.authorize({
+            scope: 'scope.writePhotosAlbum'
+          })
+        }
+      }
+    })
+  },
   bindBlur: function(e) {
     this.setData({
       inputData: e.detail.value

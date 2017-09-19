@@ -24,31 +24,55 @@
   flex-direction: column;
   display: flex;
   margin-top: 63rpx;
+  height: 100%;
+  width: 100%;
 }
 
 .contentContainer {
   align-items: center;
   flex-direction: column;
   display: flex;
-  margin: 100rpx;
+  height: 25%;
+  width: 100%;
+  margin-bottom: 50rpx;
+}
+
+.first_text_container {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 45%;
+  height: 30%;
+}
+
+.second_text_container {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+  height: 30%;
 }
 
 .first_text {
-  font-size: 35rpx;
   background-color: transparent;
   border-color: transparent;
+  height: 100%;
+  width: 100%;
 }
 
 .second_text {
-  font-size: 25rpx;
+  height: 100%;
+  width: 100%;
 }
 
 .inputContainer {
+  margin-bottom: 20rpx;
   margin-top: 30rpx;
-  width: 71%;
-  height: 91%;
-  margin-bottom: 30rpx;
-  background-color: rgba(177,193,194,255);
+  width: 55%;
+  height: 40%;
+  background-color: rgba(177,193,194,0.4);
   border-radius: 10rpx;
   align-items: center;
   flex-direction: row;
@@ -58,7 +82,7 @@
 .input_padding {
   padding-left: 15rpx;
   padding-right: 15rpx;
-  padding-bottom: 11rpx;
+  padding-bottom: 6rpx;
   font-size: 30rpx;
   color: white;
   position:relative;
@@ -72,6 +96,7 @@
 .input {
   width: 98%;
   text-align: center;
+  font-size: 30rpx;
 }
 
 .input_left {

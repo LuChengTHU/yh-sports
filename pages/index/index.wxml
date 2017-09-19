@@ -6,12 +6,16 @@
       <view class="contentContainer">
         <view class="inputContainer"> 
           <text class="input_padding input_left">》</text>
-          <input class="input" bindblur='bindBlur' placeholder='输入框'></input>
+          <input class="input" bindblur='bindBlur' ></input>
           <text class="input_padding input_right">《</text>
         </view>
-        <text bindtap='bindInputTap' class="first_text">点击生成你的清华故事</text>
+        <view class="first_text_container" >
+          <image bindtap='bindInputTap'  src="../../images/first_text.png" class="first_text" mode='aspectFit'></image>
+        </view>
       </view>
-      <text class="second_text">2017清华大学研究生运动会</text>
+      <view class="second_text_container">
+        <image class="second_text" mode="aspectFit" src="../../images/second_text.png"/>
+      </view>
     </view>
   </view>
 </view>

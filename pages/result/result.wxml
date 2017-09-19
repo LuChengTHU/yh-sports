@@ -1,6 +1,6 @@
 <!--result.wxml-->
 
 <view id="result_bg" class="result_background" style="background-color:{{bg}}">
-  <image id="result_image" src="{{image_src}}" class="result_image"></image>
-
+  <image id="result_image" src="{{image_src}}" class="result_image" mode="aspectFit" ></image>
+  <button bindtap='bindTap' style="background-color:{{bg}}" class="save_button">保存图片</button>
 </view>
