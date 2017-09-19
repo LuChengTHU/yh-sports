@@ -96,7 +96,7 @@
 .input {
   width: 98%;
   text-align: center;
-  font-size: 30rpx;
+  font-size: 25rpx;
 }
 
 .input_left {

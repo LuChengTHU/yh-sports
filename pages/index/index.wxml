@@ -6,7 +6,7 @@
       <view class="contentContainer">
         <view class="inputContainer"> 
           <text class="input_padding input_left">》</text>
-          <input class="input" bindblur='bindBlur' ></input>
+          <input class="input" bindblur='bindBlur' placeholder="输入姓名"></input>
           <text class="input_padding input_right">《</text>
         </view>
         <view class="first_text_container" >

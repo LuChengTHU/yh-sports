@@ -15,7 +15,12 @@ Page({
       bg: string_bg
     })
   },
-
+  preview: function(e) {
+    wx.previewImage({
+      current: '', 
+      urls: [this.data.image_src]
+    })
+  },
   bindTap: function(e) {
     wx.showLoading({
       title: '正在下载图片',
