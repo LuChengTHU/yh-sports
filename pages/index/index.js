@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
-const host_address = "https://huayu.saepa.org/"
+const host_address = 'https://huayu.saepa.org/'
+// const host_address = 'http://127.0.0.1:5000/'
 Page({
   data: {
     inputData: '',
@@ -32,7 +33,7 @@ Page({
         title: '加载中',
       });
       wx.request({
-        url: "https://huayu.saepa.org/api/v1/sports",
+        url: host_address + 'api/v1/sports',
         data: { name: this.data.inputData },
         method: 'POST',
         success: (res) => {
